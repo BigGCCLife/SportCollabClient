@@ -35,21 +35,6 @@ class MainActivity : AppCompatActivity() {
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
 
-        //For Yandex maps
-        //MapKitFactory.setApiKey(BuildConfig.MAPKIT_API_KEY)
-        //MapKitFactory.initialize(this)
-        //mapView = findViewById(R.id.mapview)
-    }
 
-    override fun onStart() {
-        super.onStart()
-        //MapKitFactory.getInstance().onStart()
-        //mapView.onStart()
-    }
-
-    override fun onStop() {
-        //mapView.onStop()
-        //MapKitFactory.getInstance().onStop()
-        super.onStop()
     }
 }

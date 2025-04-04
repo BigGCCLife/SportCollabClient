@@ -17,8 +17,8 @@ android {
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
 
         // Retrieve the API key from the root project's extra properties
-//        val mapkitApiKey: String by rootProject.extra
-//        buildConfigField("String", "MAPKIT_API_KEY", "\"$mapkitApiKey\"")
+        val mapkitApiKey: String by rootProject.extra
+        buildConfigField("String", "MAPKIT_API_KEY", "\"$mapkitApiKey\"")
     }
 
     buildTypes {
@@ -58,7 +58,7 @@ dependencies {
     androidTestImplementation(libs.androidx.espresso.core)
 
     // Lite version of Yandex Maps SDK
-//    implementation("com.yandex.android:maps.mobile:4.13.0-lite")
+    implementation("com.yandex.android:maps.mobile:4.13.0-lite")
 
    // Full version
    // implementation("com.yandex.android:maps.mobile:4.13.0-full")
