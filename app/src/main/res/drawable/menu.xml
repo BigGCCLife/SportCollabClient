@@ -1,9 +1,49 @@
-<vector xmlns:android="http://schemas.android.com/apk/res/android" android:height="24dp" android:viewportHeight="512" android:viewportWidth="512" android:width="24dp">
-      
-    <path android:fillColor="#000000" android:pathData="M0,16h512v96h-512z"/>
-      
-    <path android:fillColor="#000000" android:pathData="M0,208h512v96h-512z"/>
-      
-    <path android:fillColor="#000000" android:pathData="M0,400h512v96h-512z"/>
-    
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="44dp"
+    android:height="44dp"
+    android:viewportWidth="560"
+    android:viewportHeight="528">
+
+    <!-- Group to reposition artwork with enough margin for a 48-width stroke (24 units extra on each side) -->
+    <group
+        android:translateX="24"
+        android:translateY="8">
+
+        <!-- First rectangle with white outline -->
+        <path
+            android:pathData="M0,16h512v96h-512z"
+            android:fillColor="@android:color/transparent"
+            android:strokeColor="#FFFFFF"
+            android:strokeWidth="48"
+            android:strokeLineJoin="round"
+            android:strokeLineCap="round" />
+        <path
+            android:pathData="M0,16h512v96h-512z"
+            android:fillColor="#666666" />
+
+        <!-- Second rectangle with white outline -->
+        <path
+            android:pathData="M0,208h512v96h-512z"
+            android:fillColor="@android:color/transparent"
+            android:strokeColor="#FFFFFF"
+            android:strokeWidth="48"
+            android:strokeLineJoin="round"
+            android:strokeLineCap="round" />
+        <path
+            android:pathData="M0,208h512v96h-512z"
+            android:fillColor="#666666" />
+
+        <!-- Third rectangle with white outline -->
+        <path
+            android:pathData="M0,400h512v96h-512z"
+            android:fillColor="@android:color/transparent"
+            android:strokeColor="#FFFFFF"
+            android:strokeWidth="48"
+            android:strokeLineJoin="round"
+            android:strokeLineCap="round" />
+        <path
+            android:pathData="M0,400h512v96h-512z"
+            android:fillColor="#666666" />
+
+    </group>
 </vector>

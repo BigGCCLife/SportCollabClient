@@ -38,12 +38,6 @@ class MapFragment : Fragment() {
 
         _binding = FragmentMapBinding.inflate(inflater, container, false)
 
-        // Bind textView to ViewModel
-        val textView: TextView = binding.textMap
-        mapViewModel.text.observe(viewLifecycleOwner) {
-            textView.text = it
-        }
-
         return binding.root
     }
 
@@ -55,18 +49,37 @@ class MapFragment : Fragment() {
             CameraPosition(Point(59.9342802, 30.3350986), 10.0f, 0.0f, 0.0f)
         )
 
-        val imageProvider = ImageProvider.fromResource(requireContext(), R.drawable.pin)
-        val placemark1 = binding.mapview.map.mapObjects.addPlacemark().apply {
+        val ultImageProvider = ImageProvider.fromResource(requireContext(), R.drawable.pin_ult)
+        val tenImageProvider = ImageProvider.fromResource(requireContext(), R.drawable.pin_ten)
+        val fooImageProvider = ImageProvider.fromResource(requireContext(), R.drawable.pin_foo)
+        val basImageProvider = ImageProvider.fromResource(requireContext(), R.drawable.pin_bas)
+        val icoImageProvider = ImageProvider.fromResource(requireContext(), R.drawable.pin)
+
+        binding.mapview.map.mapObjects.addPlacemark().apply {
             geometry = Point(59.928793, 30.425399)
-            setIcon(imageProvider)
+            setIcon(ultImageProvider)
         }
-        val placemark2 = binding.mapview.map.mapObjects.addPlacemark().apply {
+        binding.mapview.map.mapObjects.addPlacemark().apply {
             geometry = Point(59.927224, 30.338271)
-            setIcon(imageProvider)
+            setIcon(ultImageProvider)
         }
-        val placemark3 = binding.mapview.map.mapObjects.addPlacemark().apply {
+        binding.mapview.map.mapObjects.addPlacemark().apply {
             geometry = Point(59.925522, 30.290175)
-            setIcon(imageProvider)
+            setIcon(ultImageProvider)
+        }
+
+
+        binding.mapview.map.mapObjects.addPlacemark().apply {
+            geometry = Point(59.944666, 30.375973)
+            setIcon(basImageProvider)
+        }
+        binding.mapview.map.mapObjects.addPlacemark().apply {
+            geometry = Point(60.055927, 30.348953)
+            setIcon(tenImageProvider)
+        }
+        binding.mapview.map.mapObjects.addPlacemark().apply {
+            geometry = Point(59.860190, 30.383073)
+            setIcon(fooImageProvider)
         }
     }
 

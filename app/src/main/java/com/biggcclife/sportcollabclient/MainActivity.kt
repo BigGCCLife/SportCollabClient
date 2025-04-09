@@ -14,7 +14,6 @@ import com.biggcclife.sportcollabclient.databinding.ActivityMainBinding
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
-//    private lateinit var mapView: MapView // For Yandex maps
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -32,9 +31,6 @@ class MainActivity : AppCompatActivity() {
                 R.id.navigation_groups, R.id.navigation_map, R.id.navigation_goals, R.id.navigation_profile
             )
         )
-        setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
-
-
     }
 }
