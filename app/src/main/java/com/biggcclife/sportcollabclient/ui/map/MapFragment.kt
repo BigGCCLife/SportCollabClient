@@ -1,9 +1,13 @@
 package com.biggcclife.sportcollabclient.ui.map
 
+import android.animation.ObjectAnimator
 import android.os.Bundle
+import android.view.Gravity
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
+import android.widget.PopupWindow
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
@@ -26,6 +30,25 @@ class MapFragment : Fragment() {
         // Initialize Yandex MapKit
         MapKitFactory.setApiKey(BuildConfig.MAPKIT_API_KEY)
         MapKitFactory.initialize(requireContext().applicationContext)
+    }
+
+    private fun showCreateEventPopup() {
+        val popupView = LayoutInflater.from(requireContext())
+            .inflate(R.layout.popup_create_event, null)
+
+        val popupWindow = PopupWindow(
+            popupView,
+            ViewGroup.LayoutParams.MATCH_PARENT,
+            ViewGroup.LayoutParams.WRAP_CONTENT,
+            true
+        )
+
+        popupWindow.elevation = 10f
+        popupWindow.isFocusable = true
+        popupWindow.isOutsideTouchable = true
+
+        // Show the popup from the root of the fragment's view
+        popupWindow.showAtLocation(binding.root, Gravity.CENTER, 0, 0)
     }
 
     override fun onCreateView(
@@ -80,6 +103,11 @@ class MapFragment : Fragment() {
         binding.mapview.map.mapObjects.addPlacemark().apply {
             geometry = Point(59.860190, 30.383073)
             setIcon(fooImageProvider)
+        }
+
+        binding.plusIcon.setOnClickListener {
+            binding.plusIcon.setPressed(true)
+            showCreateEventPopup()
         }
     }
 

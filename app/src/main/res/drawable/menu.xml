@@ -1,49 +1,16 @@
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
-    android:width="44dp"
-    android:height="44dp"
-    android:viewportWidth="560"
-    android:viewportHeight="528">
+    android:width="80dp"
+    android:height="80dp"
+    android:viewportWidth="19"
+    android:viewportHeight="19">
 
-    <!-- Group to reposition artwork with enough margin for a 48-width stroke (24 units extra on each side) -->
-    <group
-        android:translateX="24"
-        android:translateY="8">
+  <!-- Background white circle -->
+  <path
+      android:pathData="M17.417,9.583A7.917,7.917 0,1 1,9.5 1.666a7.917,7.917 0,0 1,7.917 7.917z"
+      android:fillColor="#FFFFFF"/>
 
-        <!-- First rectangle with white outline -->
-        <path
-            android:pathData="M0,16h512v96h-512z"
-            android:fillColor="@android:color/transparent"
-            android:strokeColor="#FFFFFF"
-            android:strokeWidth="48"
-            android:strokeLineJoin="round"
-            android:strokeLineCap="round" />
-        <path
-            android:pathData="M0,16h512v96h-512z"
-            android:fillColor="#666666" />
-
-        <!-- Second rectangle with white outline -->
-        <path
-            android:pathData="M0,208h512v96h-512z"
-            android:fillColor="@android:color/transparent"
-            android:strokeColor="#FFFFFF"
-            android:strokeWidth="48"
-            android:strokeLineJoin="round"
-            android:strokeLineCap="round" />
-        <path
-            android:pathData="M0,208h512v96h-512z"
-            android:fillColor="#666666" />
-
-        <!-- Third rectangle with white outline -->
-        <path
-            android:pathData="M0,400h512v96h-512z"
-            android:fillColor="@android:color/transparent"
-            android:strokeColor="#FFFFFF"
-            android:strokeWidth="48"
-            android:strokeLineJoin="round"
-            android:strokeLineCap="round" />
-        <path
-            android:pathData="M0,400h512v96h-512z"
-            android:fillColor="#666666" />
-
-    </group>
+  <!-- Menu icon shapes -->
+  <path
+      android:pathData="M17.417,9.583A7.917,7.917 0,1 1,9.5 1.666a7.917,7.917 0,0 1,7.917 7.917zM14.45,6.113a0.792,0.792 0,0 0,-0.792 -0.792L5.342,5.321a0.792,0.792 0,1 0,0 1.583h8.316a0.792,0.792 0,0 0,0.792 -0.791zM14.45,9.6a0.792,0.792 0,0 0,-0.792 -0.791L5.342,8.809a0.792,0.792 0,1 0,0 1.583h8.316a0.792,0.792 0,0 0,0.792 -0.792zM14.45,13.087a0.792,0.792 0,0 0,-0.792 -0.791L5.342,12.296a0.792,0.792 0,1 0,0 1.583h8.316a0.792,0.792 0,0 0,0.792 -0.792z"
+      android:fillColor="#666666"/>
 </vector>

@@ -4,20 +4,20 @@
     <item
         android:id="@+id/navigation_groups"
         android:icon="@drawable/group"
-        android:title="Groups" />
+        android:title="Группы" />
 
     <item
         android:id="@+id/navigation_map"
         android:icon="@drawable/map"
-        android:title="Map" />
+        android:title="Карта" />
 
     <item
         android:id="@+id/navigation_goals"
         android:icon="@drawable/goals"
-        android:title="Goals" />
+        android:title="Цели" />
 
     <item
         android:id="@+id/navigation_profile"
         android:icon="@drawable/profile"
-        android:title="Profile" />
+        android:title="Профиль" />
 </menu>
