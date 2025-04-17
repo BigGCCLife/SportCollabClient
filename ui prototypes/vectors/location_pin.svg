@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="559 541.9 20.9 70.3" width="24px" height="24px">
+  <g id="SVGRepo_bgCarrier" stroke-width="0" transform="matrix(1, 0, 0, 1, 107.980003, 259.628998)"/>
+  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.576" transform="matrix(1, 0, 0, 1, 107.980003, 259.628998)"/>
+  <g id="group-1" stroke-width="0" transform="matrix(0.885687, 0, 0, 0.885687, 548.195984, 538.362)"/>
+  <g id="group-2" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.576" transform="matrix(0.885687, 0, 0, 0.885687, 548.195984, 538.362)"/>
+  <g id="SVGRepo_iconCarrier" transform="matrix(0.885687, 0, 0, 0.885687, 548.195984, 538.362)">
+    <title>location-pin-solid</title>
+    <g id="Layer_2" data-name="Layer 2">
+      <g id="invisible_box" data-name="invisible box">
+        <rect width="48" height="48" fill="none"/>
+      </g>
+      <g id="icons_Q2" data-name="icons Q2">
+        <path d="M24,4a12,12,0,0,0-2,23.8V42a2,2,0,0,0,4,0V27.8A12,12,0,0,0,24,4Zm0,16a4,4,0,1,1,4-4A4,4,0,0,1,24,20Z"/>
+      </g>
+    </g>
+  </g>
+</svg>

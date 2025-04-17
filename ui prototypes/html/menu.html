@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Создать событие</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 20px;
+    }
+    .menu {
+      background-color: #fff;
+      border-radius: 15px;
+      padding: 20px 20px 30px 20px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+      max-width: 400px;
+      margin: 0 auto;
+      position: relative;
+    }
+    .close-icon {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 24px;
+      cursor: pointer;
+      color: #888;
+    }
+    .menu h2 {
+      margin-top: 0;
+      text-align: center;
+      color: #333;
+    }
+    .menu label {
+      display: block;
+      margin-top: 15px;
+      color: #555;
+    }
+    .menu input[type="text"],
+    .menu input[type="date"],
+    .menu input[type="time"],
+    .menu select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      font-size: 16px;
+      box-sizing: border-box;
+    }
+    /* Оформление для незаписываемого поля */
+    .menu input[readonly] {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      background-color: #eee;
+      cursor: default;
+    }
+    .menu button, .menu .map-button {
+      width: 100%;
+      padding: 10px;
+      background-color: #28a745;
+      border: none;
+      border-radius: 10px;
+      color: #fff;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 20px;
+      transition: background-color 0.3s ease;
+    }
+    .menu button:hover, .menu .map-button:hover {
+      background-color: #218838;
+    }
+    .map-button {
+      background-color: #007bff;
+      margin-top: 10px;
+    }
+    .map-button:hover {
+      background-color: #0069d9;
+    }
+  </style>
+</head>
+<body>
+  <div class="menu">
+    <div class="close-icon">&times;</div>
+    <h2>Создать событие</h2>
+    <form>
+      <label for="event-date">Дата</label>
+      <input type="date" id="event-date" name="event-date" required>
+      
+      <label for="event-time">Время</label>
+      <input type="time" id="event-time" name="event-time" required>
+      
+      <label for="event-address">Адрес</label>
+      <input type="text" id="event-address" name="event-address" value="парк Интернационалистов, Санкт-Петербург" readonly>
+      <button type="button" class="map-button">Указать точку. . .</button>
+      
+      <label for="sport-type">Тип спорта</label>
+      <select id="sport-type" name="sport-type" required>
+        <option value="">Выберите спорт</option>
+        <option value="football">Футбол</option>
+        <option value="basketball">Баскетбол</option>
+        <option value="tennis">Теннис</option>
+        <option value="running">Бег</option>
+        <option value="swimming">Плавание</option>
+        <option value="ultimate">Алтимат</option>
+      </select>
+      
+      <label for="tags">Теги (Приглашенные)</label>
+      <input type="text" id="tags" name="tags" placeholder="Введите имена или теги через запятую">
+      
+      <button type="submit">Создать событие</button>
+    </form>
+  </div>
+  <!-- Пример JavaScript для закрытия меню -->
+  <script>
+    document.querySelector('.close-icon').addEventListener('click', function() {
+      document.querySelector('.menu').style.display = 'none';
+    });
+  </script>
+</body>
+</html>
